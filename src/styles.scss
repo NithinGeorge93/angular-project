@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "./assets/scss/roots.scss"; 
+
+@import "./assets/scss/button.scss"; 
+
+body {
+	font-family: 'Urbanist', sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	color: $text-color;
+}
+
+.slick-dots {
+	bottom: -60px;
+
+	li {
+		margin: 0 2px;
+
+		button:before,
+		&.slick-active button:before {
+			color: transparent;
+			opacity: 1;
+		}
+
+		button:before {
+			background-color: transparent;
+			border: 1px solid #65676B;
+			border-radius: 50%;
+			display: inline-block;
+			height: 15px !important;
+			width: 15px !important;
+			color: transparent !important;
+		}
+
+		&.slick-active button:before {
+			background: #65676B;
+		}
+	}
+}

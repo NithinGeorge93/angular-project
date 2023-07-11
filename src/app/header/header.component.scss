@@ -1,0 +1,59 @@
+header {
+    background: #F1F1F1;
+    padding: 15px 0px;
+
+    .form-group {
+        .form-control {
+            border-radius: 12px;
+            padding: 7px 16px;
+            font-size: 16px;
+            border-color: #DBDBDB;
+            box-shadow: 0px 8px 22px rgba(170, 170, 170, 0.15);
+        }
+
+        a {
+            position: absolute;
+            right: 17px;
+            top: 8px;
+        }
+    }
+
+    .border-btm {
+        position: relative;
+        
+        &::before {
+            content: "";
+            height: 1px;
+            position: absolute;
+            background: #CED0D4;
+            left: 12px;
+            bottom: -15px;
+            margin: 0px;
+            width: calc(100% - 25px);
+        }
+    }
+
+    .logo {
+        img {
+            width: 80px;
+            height: 100%;
+        }
+    }
+
+    .btn {
+        span {
+            img {
+                margin: -2px 5px 0 0;
+                display: inline;
+            }
+        }
+    }
+}
+
+.btn-outline-secondary {
+    &:hover {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+}

@@ -1,0 +1,69 @@
+
+@import "../../assets/scss/roots.scss"; 
+
+.footer {
+	background: #454545;
+	color: $c-white;
+	padding-top: 35px;
+
+    .footer-box {
+        padding-bottom: 35px;
+
+        .form-control {
+            border: 1px solid #B1B1B1;
+            border-radius: 10px;
+            height: 45px;
+            background-color: transparent;
+            color: $c-white;
+        }
+
+        .form-group {
+            a {
+                position: absolute;
+                right: 15px;
+                top: 10px;
+            }
+        }
+
+        .email-label {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.4;
+            color: $c-white;
+            padding-bottom: 10px;
+        }
+    }
+
+    .footer-logo {
+        img {
+            width: 100px;
+            height: 100%;
+        }
+    }
+
+    .social-menu {
+        text-align: right;
+
+        a {
+            padding: 10px;
+            margin-right: 5px;
+
+            &:hover {
+                border-radius: 7px;
+                background-color: $btn-p-hover;
+                border-color: $btn-p-hover;
+                box-shadow: 0 5px 15px rgba(255, 111, 25, .3);
+            }
+        }
+    }
+
+    .copy-right {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: $c-white;
+        border-top: 1px solid #6B6C6D;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
