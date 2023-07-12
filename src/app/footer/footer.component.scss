@@ -31,6 +31,10 @@
             line-height: 1.4;
             color: $c-white;
             padding-bottom: 10px;
+
+            @media screen and (max-width: $small) {
+                text-align: center;
+            }
         }
     }
 
@@ -38,6 +42,11 @@
         img {
             width: 100px;
             height: 100%;
+        }
+
+        @media screen and (max-width: $small) {
+            text-align: center;
+            margin-bottom: 15px;
         }
     }
 
@@ -65,5 +74,10 @@
         border-top: 1px solid #6B6C6D;
         padding-top: 15px;
         padding-bottom: 15px;
+
+        @media screen and (max-width: $small) {
+            margin-top: 15px;
+		text-align: center;
+        }
     }
 }

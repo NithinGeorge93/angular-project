@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import "./assets/scss/roots.scss"; 
+@import "./assets/scss/roots.scss";
 
-@import "./assets/scss/button.scss"; 
+@import "./assets/scss/button.scss";
 
 body {
 	font-family: 'Urbanist', sans-serif;
@@ -38,5 +38,11 @@ body {
 		&.slick-active button:before {
 			background: #65676B;
 		}
+	}
+}
+
+@media screen and (max-width: $small) {
+	.slick-arrow {
+		display: none !important;
 	}
 }

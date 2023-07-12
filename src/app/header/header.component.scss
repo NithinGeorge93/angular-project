@@ -1,6 +1,17 @@
+@import "../../assets/scss/roots.scss";
+
 header {
     background: #F1F1F1;
     padding: 15px 0px;
+
+    @media screen and (max-width: $small) {
+        padding: 15px 0px 40px;
+
+        .text-end {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
     .form-group {
         .form-control {
@@ -9,6 +20,10 @@ header {
             font-size: 16px;
             border-color: #DBDBDB;
             box-shadow: 0px 8px 22px rgba(170, 170, 170, 0.15);
+
+            @media screen and (max-width: $small) {
+                margin-bottom: 15px;
+            }
         }
 
         a {
@@ -20,7 +35,7 @@ header {
 
     .border-btm {
         position: relative;
-        
+
         &::before {
             content: "";
             height: 1px;
@@ -30,6 +45,10 @@ header {
             bottom: -15px;
             margin: 0px;
             width: calc(100% - 25px);
+
+            @media screen and (max-width: $small) {
+                bottom: -40px;
+            }
         }
     }
 
@@ -37,6 +56,11 @@ header {
         img {
             width: 80px;
             height: 100%;
+        }
+
+        @media screen and (max-width: $small) {
+            text-align: center;
+            margin-bottom: 15px;
         }
     }
 

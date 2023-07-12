@@ -14,8 +14,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AppComponent,
     HomePageComponent,
     HeaderComponent,
-    FooterComponent,
-    AppComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
